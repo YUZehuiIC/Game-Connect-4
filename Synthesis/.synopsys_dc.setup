@@ -1,0 +1,100 @@
+#### Modified By Kwen-Siong Chong; Original Script from Victor Adrian 
+#### 21 Jan 2006
+#### For DC version X.2005.09
+#### For AMS Hit Kit 3.7
+
+#### --------------------------------------------------
+#### [ Owner ]
+#### --------------------------------------------------
+echo ""
+echo "=========================  VA  ========================="
+echo ""
+
+set designer "Kwen Siong Chong"
+set company "NTU - EEE - ISYSRL1"
+
+#### --------------------------------------------------
+#### [ Library ]
+#### --------------------------------------------------
+#### Library is prioritized from left to right.
+
+#### From AMS Cadence HIT-Kit
+
+##set AMS_DIR [getenv "AMS_DIR"]
+##set SYNOPSYS [getenv "SYNOPSYS"]
+set AMSDIR [get_unix_variable AMS_DIR]
+set SYNDIR [get_unix_variable SYNOPSYS]
+
+#### --------------------------------------------------
+#### [ Set Paths ]
+#### --------------------------------------------------
+set source_path "./sources"
+set script_path "./scripts"
+set work_path "./work"
+set log_path "./logs"
+set ddc_path "./ddc"
+set netlist_path "./netlist"
+
+set search_path	". $AMSDIR/synopsys/c35_3.3V $SYNDIR/libraries/syn $SYNDIR/dw/sim_ver ./scripts ./sources ./ddc"
+set target_library "c35_CORELIB_WC.db c35_IOLIB_WC.db c35_IOLIBV5_WC.db" 
+set synthetic_library "dw_foundation.sldb"
+set synlib_wait_for_design_licence "DesignWare"
+set link_library "* $target_library $synthetic_library"
+
+define_design_lib WORK -path "./work"
+
+#### --------------------------------------------------
+#### [ Set Variables ]
+#### --------------------------------------------------
+
+set auto_wire_load_selection "true"
+#### Wire load model is used to estimate net's RC parasitics based on the net's fanout prior to layout (for speed / timing calculation).
+
+set compile_log_format "%area %cpu %drc %elap_time %endpoint %max_delay %mem %min_delay %group_path %time %tns \
+                        %trials %wns %dynamic_power %leakage_power"
+set default_name_rules "verilog"
+set hdlin_enable_vpp "true"   ;# Enables Verilog Preprocessing
+set hdlin_check_no_latch "true"
+set hdlin_report_inferred_modules "verbose"
+set verilogout_higher_designs_first "true"
+set hdlin_optimize_case_default "true"
+
+##set_ultra_optimization "true"   
+
+#### From AMS Cadence HIT-Kit
+set sdfout_no_edge  true
+set verilogout_equation	false
+set verilogout_no_tri	true 
+set verilogout_single_bit  false
+set hdlout_internal_busses true     
+set bus_inference_style "%s\[%d\]"  
+set bus_naming_style    "%s\[%d\]"
+set write_name_nets_same_as_ports true
+
+puts "USE: set_fix_multiple_port_nets -all [all_designs]"
+        
+                               
+# --------------------------------------------------
+# [ Useful Commands ]
+# --------------------------------------------------
+
+# { UNIX }
+alias h "history"
+
+set cache_dir_chmod_octal   "777"
+set cache_file_chmod_octal  "666"
+set cache_read   "~"
+set cache_read_info  "false"
+set cache_write  "~"
+set cache_write_info   "false"
+set dw_prefer_mc_inside "false"
+set mgi_scratch_directory "designware_generator"
+set synlib_disable_limited_licenses   "true"
+set synlib_dont_get_license  {}
+set synlib_evaluation_mode  "false"
+set synlib_library_list   {DW01 DW02 DW03 DW04 DW05 DW06 DW07 DW08}
+set synlib_model_map_effort  "medium"
+set synlib_optimize_non_cache_elements  "true"
+set synlib_prefer_ultra_license "false"
+set synlib_sequential_module   "default"
+set synlib_wait_for_design_license {}

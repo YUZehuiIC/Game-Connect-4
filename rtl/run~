@@ -1,0 +1,7 @@
+
+vcs -debug +v2k \
+        ./StateMachine_tb.v \
+        ./Syn_StateMachine.v \
+        -f ./library.f
+           	
+simv -gui

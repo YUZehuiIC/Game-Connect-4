@@ -1,0 +1,195 @@
+# Preference setting overrides
+gui_set_pref_value -category {Globals} -key {app_default_font} -value {Helvetica,17,-1,5,50,0,0,0,0,0}
+gui_set_pref_value -category {Globals} -key {app_fixed_width_font} -value {Courier [Ibm],16,-1,5,50,0,0,0,0,0}
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_set_pref_value -category {Wave} -key {showgrid} -value {true}
+gui_create_pref_category -category {dlg_settings}
+gui_create_pref_key -category {dlg_settings} -key {tableWithImmediatePopup} -value_type {bool} -value {true}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 1584
+gui_set_state_value -category Layout -key child_console_size_y -value 324
+gui_set_state_value -category Layout -key child_data_coltype -value 102
+gui_set_state_value -category Layout -key child_data_colvalue -value 17
+gui_set_state_value -category Layout -key child_data_colvariable -value 181
+gui_set_state_value -category Layout -key child_data_size_x -value 292
+gui_set_state_value -category Layout -key child_data_size_y -value 673
+gui_set_state_value -category Layout -key child_driver_size_x -value 1298
+gui_set_state_value -category Layout -key child_driver_size_y -value 181
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 227
+gui_set_state_value -category Layout -key child_hier_size_y -value 673
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-18}
+gui_set_state_value -category Layout -key child_source_size_x -value 1068
+gui_set_state_value -category Layout -key child_source_size_y -value 669
+gui_set_state_value -category Layout -key child_wave_colname -value 230
+gui_set_state_value -category Layout -key child_wave_colvalue -value 230
+gui_set_state_value -category Layout -key child_wave_left -value 464
+gui_set_state_value -category Layout -key child_wave_right -value 1130
+gui_set_state_value -category Layout -key main_pos_y -value 24
+gui_set_state_value -category Layout -key main_size_x -value 1589
+gui_set_state_value -category Layout -key main_size_y -value 1139
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-18}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1604
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 1002
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 5
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 24
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1604
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1148
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd2|DLPane.1|pages|Data.1|hbox|textfilter -value_type string -value EN2
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui }}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home1/msc30y20/Desktop/Test2_GP30/Behavioral /home1/msc30y20/Desktop/Test2_30/Behavioral /home1/msc30y20/Desktop/Module5_pipeline/Behavioral /home1/msc30y20/Desktop/Module5_pipeline/rtl /home1/msc30y20/Desktop/Module5/Behavioral}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home1/msc30y20/Desktop/Test2_GP30/Behavioral/simv simv /home1/msc30y20/Desktop/Test2_30/Behavioral/simv /home1/msc30y20/Desktop/Module5_pipeline/Behavioral/simv /home1/msc30y20/Desktop/Module5/Behavioral/simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe simv -args {-ucligui  } -dir .
+gui_list_expand -id  Hier.1   Connect4_tb
+gui_list_select -id Hier.1 -current_item_name Connect4_tb.C1 -current_item_type Scope  -selected  { Connect4_tb.C1   }
+gui_list_select -id Data.1 -selected  { {Connect4_tb.C1.G[3:0]}   }
+gui_list_select -id Data.1 -selected  { {Connect4_tb.C1.G[3:0]}  {Connect4_tb.C1.O[3:0]}  {Connect4_tb.C1.LED_PIN[23:0]}  {Connect4_tb.C1.C4_OUT[1:0]}  Connect4_tb.C1.CLK  Connect4_tb.C1.NRST  Connect4_tb.C1.start   }
+gui_list_select -id Data.1 -selected  { {Connect4_tb.C1.G[3:0]}  {Connect4_tb.C1.O[3:0]}  {Connect4_tb.C1.LED_PIN[23:0]}  {Connect4_tb.C1.C4_OUT[1:0]}  Connect4_tb.C1.CLK  Connect4_tb.C1.NRST  Connect4_tb.C1.start  {Connect4_tb.C1.n[31:0]}   }
+gui_list_select -id Data.1 -selected  { {Connect4_tb.C1.G[3:0]}  {Connect4_tb.C1.O[3:0]}  {Connect4_tb.C1.LED_PIN[23:0]}  {Connect4_tb.C1.C4_OUT[1:0]}  Connect4_tb.C1.CLK  Connect4_tb.C1.NRST  Connect4_tb.C1.start  {Connect4_tb.C1.n[31:0]}  {Connect4_tb.C1.m[31:0]}   }
+gui_list_select -id Data.1 -selected  { {Connect4_tb.C1.G[3:0]}  {Connect4_tb.C1.O[3:0]}  {Connect4_tb.C1.LED_PIN[23:0]}  {Connect4_tb.C1.C4_OUT[1:0]}  Connect4_tb.C1.CLK  Connect4_tb.C1.NRST  Connect4_tb.C1.start  {Connect4_tb.C1.n[31:0]}  {Connect4_tb.C1.m[31:0]}  {Connect4_tb.C1.O_play[3:0]}   }
+gui_list_select -id Data.1 { {Connect4_tb.C1.G_play[3:0]}   }
+gui_list_select -id Data.1 { {Connect4_tb.C1.state[1:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {Connect4_tb.C1.G[3:0]} {Connect4_tb.C1.O[3:0]} {Connect4_tb.C1.LED_PIN[23:0]} {Connect4_tb.C1.C4_OUT[1:0]} Connect4_tb.C1.CLK Connect4_tb.C1.NRST Connect4_tb.C1.start {Connect4_tb.C1.state[1:0]} {Connect4_tb.C1.G_play[3:0]} {Connect4_tb.C1.O_play[3:0]} {Connect4_tb.C1.m[31:0]} {Connect4_tb.C1.n[31:0]} } -insertionbar
+gui_sim_continue  
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.n[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.G_play[3:0]}  {Connect4_tb.C1.O_play[3:0]}  {Connect4_tb.C1.m[31:0]}  {Connect4_tb.C1.n[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.G_play[3:0]}  {Connect4_tb.C1.O_play[3:0]}  {Connect4_tb.C1.m[31:0]}  {Connect4_tb.C1.n[31:0]}  {Connect4_tb.C1.C4_OUT[1:0]}   }
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.G_play[3:0]}  {Connect4_tb.C1.O_play[3:0]}  {Connect4_tb.C1.m[31:0]}  {Connect4_tb.C1.n[31:0]}  {Connect4_tb.C1.C4_OUT[1:0]}  {Connect4_tb.C1.LED_PIN[23:0]}   }
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.G_play[3:0]}  {Connect4_tb.C1.O_play[3:0]}  {Connect4_tb.C1.m[31:0]}  {Connect4_tb.C1.n[31:0]}  {Connect4_tb.C1.C4_OUT[1:0]}  {Connect4_tb.C1.LED_PIN[23:0]}  {Connect4_tb.C1.O[3:0]}   }
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.G_play[3:0]}  {Connect4_tb.C1.O_play[3:0]}  {Connect4_tb.C1.m[31:0]}  {Connect4_tb.C1.n[31:0]}  {Connect4_tb.C1.C4_OUT[1:0]}  {Connect4_tb.C1.LED_PIN[23:0]}  {Connect4_tb.C1.O[3:0]}  {Connect4_tb.C1.G[3:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select_all -id Wave.1
+gui_list_set_selected_property -id Wave.1 -radix binary
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.G_play[3:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 171236
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 171235
+gui_marker_move -id  Wave.1 C1 171235
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 171235
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 651648
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.state[1:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {Connect4_tb.C1.state[1:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 351000
+gui_marker_move -id  Wave.1 C1 451000
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 385281
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 385280
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_zoom_timerange -id  Wave.1 385280 385281
+gui_set_env SIMSETUP::SIMCURRENTDIR /home1/msc30y20/Desktop/Test2_GP30/rtl
+gui_sim_restart -build /home1/msc30y20/Desktop/Test2_GP30/rtl/simv.daidir/vcs_rebuild
+gui_sim_continue  
+gui_zoom -window Wave.1 -full
+#gui_exit
+

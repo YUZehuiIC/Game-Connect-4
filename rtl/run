@@ -1,0 +1,8 @@
+cp -i ../Synthesis/netlist/Syn_Connect4.sdf ./
+cp -i ../Synthesis/netlist/Syn_Connect4.v ./
+cp -i ../Behavioral/Connect4_tb.v ./
+cp -i ../Behavioral/InputVector_G.txt ./
+cp -i ../Behavioral/InputVector_O.txt ./
+source synopsys_linux_vJ-2014_cshrc
+vcs -debug +v2k ./Connect4_tb.v ./Syn_Connect4.v -f ./library.f
+simv -gui

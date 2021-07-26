@@ -1,0 +1,98 @@
+0 
+28
++cli+4
++itf+/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/vcsd.tab
++memcbk
++v2k
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -fPIC -O -I/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags= -m32 -m32
+-Mobjects= /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libvirsim.so /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/librterrorinf.so /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/ctype-stubs_32.a -ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-debug=3
+-gen_obj
+-picarchive
+./Connect4.v
+./Connect4_tb.v
+/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/bin/vcs1
+56
+sysc_uni_pwd=/home1/msc30y20/Desktop/Test2_GP30/Behavioral
+mraarch=amd64
+installdir=/net/numnum2/silo3/synopsys/vJ-2014/hspice/J-2014.09-SP1/hspice
+XMODIFIERS=@im=none
+XAUTHORITY=/tmp/.gdmUUEOR0
+VMR_MODE_FLAG=32
+VENDOR=unknown
+VCS_HOME=/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+USERNAME=msc30y20
+UNAME=/bin/uname
+TOOL_HOME=/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux
+TMIARCH=RH
+Scope=/net/numnum2/silo3/synopsys/vJ-2014/cscope64/J-2015.03/ai_bin
+SYNOPSYS=/net/numnum2/silo3/synopsys/vJ-2014
+SSH_AUTH_SOCK=/tmp/ssh-FsBhWZ5342/agent.5342
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=5384
+SNPS_PLATFORM=amd64
+SNPS_64=1
+SNPSLMD_LICENSE_FILE=27500@10.97.8.129:/net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/flexlm//license.dat
+SESSION_MANAGER=local/vlsilinux07:/tmp/.ICE-unix/5398
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OSTYPE=linux
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIR=/usr
+INPUTRC=/etc/inputrc
+HSP_HOME=/net/numnum2/silo3/synopsys/vJ-2014/hspice/J-2014.09-SP1/hspice
+HSP_GCC_VERSION=4.7.2
+HSP_GCC=/net/numnum2/silo3/synopsys/vJ-2014/hspice/J-2014.09-SP1/hspice/GNU/rhel/gcc-4.7.2/bin/gcc -m64 
+HOSTTYPE=x86_64-linux
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/home1/msc30y20/.gtkrc-1.2-gnome2
+GROUP=msc30y20
+GNOME_KEYRING_SOCKET=/tmp/keyring-a6Ka3g/socket
+GNOME_DESKTOP_SESSION_ID=Default
+GDM_XSERVER_LOCATION=local
+GDMSESSION=default
+DESKTOP_STARTUP_ID=
+DESKTOP_SESSION=default
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-H8QhJQYq6e,guid=098bed0960aea518f092a5005f7add85
+CoreConsultant_HOME=/net/numnum2/silo3/synopsys/Freeware/CoreConsultant/Y-2006.03/linux/dware
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+CMIARCH=RH
+CDS_LOAD_ENV=CSF
+ARCH=amd64
+0
+3
+1602200468 ./Connect4.v
+1602186441 ./Connect4_tb.v
+1409195239 /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/vcsd.tab
+4
+0 
+1409197423 /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libvirsim.so
+1409197112 /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/librterrorinf.so
+1409197067 /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libsnpsmalloc.so
+1602200483 simv.daidir

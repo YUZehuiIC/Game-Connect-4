@@ -1,0 +1,121 @@
+setenv SYNOPSYS /net/numnum2/silo3/synopsys/vJ-2014
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#                 Synopsys Synthesis Tools                         #
+ 
+set path = ( $path $SYNOPSYS/syn/J-2014.09-SP2/bin .)
+
+# cp $SYNOPSYS/admin/setup/.synopsys_dc.setup ~/.synopsys_dc.setup #
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+#   core Tools  #
+ 
+set path = ($path $SYNOPSYS $SYNOPSYS/coreTools/J-2014.09/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                            customdesigner                            #    
+
+set path = ($path $SYNOPSYS/customdesigner/J-2014.12/bin .)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+
+ 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#                      VCS &  vcs-mx                                           #
+
+# setenv VCS_HOME /net/numnum/silo3/synopsys/vJ-2014/vcs-mx/J-2014.12/bin
+setenv VCS_HOME /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1
+set path = ($path $VCS_HOME/bin /usr/bin .)
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#           Freeware : CoreConsultant                                  #
+setenv CoreConsultant_HOME /net/numnum2/silo3/synopsys/Freeware/CoreConsultant/Y-2006.03/linux/dware
+set path = ($path $CoreConsultant_HOME/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~# 
+#                    VCS vI
+# set path = ($path  $SYNOPSYS/vcs/I-2014.03-SP1/bin .)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# NanoSim, PowerMill,  TimeMill  &  Discovery AMS Simulation                  #
+
+set path = ($path $SYNOPSYS/xa/J-2014.09/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#                   MV tools .. mvgui                    #
+
+set path = ($path  $SYNOPSYS/mvtools/I-2014.03-SP2/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                  Raphael                             #
+set path = ($path  $SYNOPSYS/raphael/J-2014.09/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#              Sentaurus                               #
+
+set path = ($path  $SYNOPSYS/pcm_studio/J-2014.06/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#                  HSPICE                                           #
+
+source /net/numnum2/silo3/synopsys/vJ-2014/hspice/J-2014.09-SP1/hspice/bin/cshrc.meta
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#                   Primerail                             #
+
+set path = ($path $SYNOPSYS/primerail/J-2014.06-SP2/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                        NanoTime                                      #
+
+set path = ($path $SYNOPSYS/nt/vJ-2014.06-SP2/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                         icc  - Galaxy IC Compiler Tools           #
+
+# set path = ($path /net/numnum/silo3/synopsys/E-2010.12/icc_vE-2010.12/amd64/syn/bin .)
+set path = ($path $SYNOPSYS/icc/vJ-2014.09/bin .)
+#   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+#              CosmosScope                                #
+
+setenv Scope /net/numnum2/silo3/synopsys/vJ-2014/cscope64/J-2015.03/ai_bin
+set path = ($Scope $path .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                  VERA                                   #
+set path = ($path $SYNOPSYS/vera/I-2014.03/vera_vI-2014.03_amd64/bin .)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                Laker                                    #
+set path = ($path $SYNOPSYS/laker_v2014.06/bin .)
+
+
+# License 
+setenv LM_LICENSE_FILE 27500@10.97.8.129
+setenv SNPSLMD_LICENSE_FILE 27500@10.97.8.129

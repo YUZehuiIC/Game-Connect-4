@@ -1,0 +1,12 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-SP1; Runtime version I-2014.03-SP1;  Oct  9 07:41 2020
+VCD+ Writer I-2014.03-SP1 Copyright (c) 1991-2014 by Synopsys Inc.
+The file '/home1/msc30y20/Desktop/Test2_GP30/Behavioral/inter.vpd' was opened successfully.
+$finish called from file "./Connect4_tb.v", line 55.
+$finish at simulation time                 2540
+Simulation complete, time is 2540.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2540
+CPU Time:      0.040 seconds;       Data structure size:   0.0Mb
+Fri Oct  9 07:41:39 2020

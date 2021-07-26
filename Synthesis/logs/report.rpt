@@ -1,0 +1,566 @@
+ 
+****************************************
+check_design summary:
+Version:     J-2014.09-SP2
+Date:        Fri Oct  9 01:57:13 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     10
+    Unconnected ports (LINT-28)                                    10
+
+Cells                                                               6
+    Nets connected to multiple pins on same cell (LINT-33)          6
+--------------------------------------------------------------------------------
+
+Warning: In design 'Connect4_DW01_add_96', port 'A[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_96', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_96', port 'A[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_96', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_96', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_97', port 'A[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_97', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_97', port 'A[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_97', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4_DW01_add_97', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'Connect4', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_136_2'. (LINT-33)
+   Net 'n65541' is connected to pins 'A[31]', 'A[26]'', 'A[25]', 'A[24]', 'A[23]', 'A[18]', 'A[17]', 'A[16]', 'A[15]', 'A[10]', 'A[9]'.
+Warning: In design 'Connect4', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_136_2'. (LINT-33)
+   Net 'n65540' is connected to pins 'A[30]', 'A[29]'', 'A[28]', 'A[27]', 'A[22]', 'A[21]', 'A[20]', 'A[19]', 'A[14]', 'A[13]', 'A[12]', 'A[11]'.
+Warning: In design 'Connect4', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_136_2'. (LINT-33)
+   Net 'n807' is connected to pins 'A[2]', 'A[1]'', 'A[0]'.
+Warning: In design 'Connect4', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_167_2'. (LINT-33)
+   Net 'n65543' is connected to pins 'A[31]', 'A[29]'', 'A[27]', 'A[26]', 'A[25]', 'A[24]', 'A[23]', 'A[21]', 'A[19]', 'A[18]', 'A[17]', 'A[16]', 'A[15]', 'A[14]', 'A[13]', 'A[12]', 'A[11]', 'A[10]', 'A[9]'.
+Warning: In design 'Connect4', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_167_2'. (LINT-33)
+   Net 'N1946' is connected to pins 'A[30]', 'A[28]'', 'A[22]', 'A[20]'.
+Warning: In design 'Connect4', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_167_2'. (LINT-33)
+   Net 'n807' is connected to pins 'A[2]', 'A[1]'', 'A[0]'.
+1
+ 
+****************************************
+Report : area
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:13 2020
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+Number of ports:                           37
+Number of nets:                          6234
+Number of cells:                         5991
+Number of combinational cells:           5531
+Number of sequential cells:               458
+Number of macros/black boxes:               0
+Number of buf/inv:                       1154
+Number of references:                      53
+
+Combinational area:             751095.789993
+Buf/Inv area:                    48776.000732
+Noncombinational area:           84520.799988
+Macro/Black Box area:                0.000000
+Net Interconnect area:          197451.000000
+
+Total cell area:                835616.589981
+Total area:                    1033067.589981
+1
+ 
+****************************************
+Report : design
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:13 2020
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+Local Link Library:
+
+    {c35_CORELIB_WC.db, c35_IOLIB_WC.db, c35_IOLIBV5_WC.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WORST-MIL
+    Library : c35_CORELIB_WC
+    Process :   1.40
+    Temperature : 150.00
+    Voltage :   3.00
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   10k
+Location       :   c35_CORELIB_WC
+Resistance     :   0.0014
+Capacitance    :   0.001633
+Area           :   1.8
+Slope          :   5
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     5.00
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:13 2020
+****************************************
+
+
+    Design: Connect4
+
+    max_area               0.00
+  - Current Area       1033067.56
+  ------------------------------
+    Slack              -1033067.56  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:13 2020
+****************************************
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: enclosed
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+C4_OUT[1] (out)                     1.68 f           92.50        90.82
+C4_OUT[0] (out)                     1.68 f           92.50        90.82
+C4_OUT_reg[1]/D (DF3)               5.38 f           97.50        92.12
+C4_OUT_reg[0]/D (DF3)               5.18 f           97.50        92.31
+G_play_reg[3]/D (DF3)               5.04 r           97.48        92.44
+O_play_reg[3]/D (DF1)               5.04 r           97.48        92.44
+O_play_reg[2]/D (DF1)               5.04 r           97.48        92.44
+O_play_reg[1]/D (DF1)               5.04 r           97.48        92.44
+G_play_reg[2]/D (DF1)               5.04 r           97.48        92.44
+G_play_reg[1]/D (DF1)               5.04 r           97.48        92.44
+O_play_reg[0]/D (DF3)               5.04 r           97.48        92.44
+G_play_reg[0]/D (DF3)               5.04 r           97.48        92.44
+
+1
+ 
+****************************************
+Report : clock_gating
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:13 2020
+****************************************
+
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        0         |
+          |                                       |                  |
+          |    Number of Gated registers          |     0 (0.00%)    |
+          |                                       |                  |
+          |    Number of Ungated registers        |    12 (100.00%)  |
+          |                                       |                  |
+          |    Total number of registers          |       12         |
+          ------------------------------------------------------------
+
+
+
+1
+Loading db file '/net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:14 2020
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Connect4               10k               c35_CORELIB_WC
+Connect4_DW01_add_96   10k               c35_CORELIB_WC
+Connect4_DW01_add_97   10k               c35_CORELIB_WC
+
+
+Global Operating Voltage = 3    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 769.2337 uW   (43%)
+  Net Switching Power  = 999.5297 uW   (57%)
+                         ---------
+Total Dynamic Power    =   1.7688 mW  (100%)
+
+Cell Leakage Power     =  16.7331 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       3.7544e-02        9.1323e-03        6.9881e+04        4.6746e-02  (   2.62%)
+sequential     4.3674e-02        2.5395e-02        1.5848e+06        7.0654e-02  (   3.96%)
+combinational      0.6880            0.9650        1.5078e+07            1.6681  (  93.42%)
+--------------------------------------------------------------------------------------------------
+Total              0.7692 mW         0.9995 mW     1.6733e+07 pW         1.7855 mW
+1
+ 
+****************************************
+Report : qor
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:14 2020
+****************************************
+
+
+  Timing Path Group 'CLK'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          1.68
+  Critical Path Slack:          90.82
+  Critical Path Clk Period:    100.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          2
+  Hierarchical Port Count:        196
+  Leaf Cell Count:               6061
+  Buf/Inv Cell Count:            1160
+  Buf Cell Count:                 339
+  Inv Cell Count:                 821
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      5603
+  Sequential Cell Count:          458
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   751095.789993
+  Noncombinational Area: 84520.799988
+  Buf/Inv Area:          48776.000732
+  Total Buffer Area:         18655.00
+  Total Inverter Area:       30121.00
+  Macro/Black Box Area:      0.000000
+  Net Area:             197451.000000
+  -----------------------------------
+  Cell Area:            835616.589981
+  Design Area:         1033067.589981
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          6298
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: vlsilinux07
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   32.77
+  Logic Optimization:                  5.60
+  Mapping Optimization:               17.75
+  -----------------------------------------
+  Overall Compile Time:               66.31
+  Overall Compile Wall Clock Time:    68.23
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+ 
+****************************************
+Report : hierarchy
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:14 2020
+****************************************
+
+Attributes:
+    r - licensed design
+
+Connect4           r
+    ADD22                        c35_CORELIB_WC
+    ADD32                        c35_CORELIB_WC
+    AOI210                       c35_CORELIB_WC
+    AOI211                       c35_CORELIB_WC
+    AOI221                       c35_CORELIB_WC
+    AOI311                       c35_CORELIB_WC
+    AOI2111                      c35_CORELIB_WC
+    BUF2                         c35_CORELIB_WC
+    BUF6                         c35_CORELIB_WC
+    CLKIN0                       c35_CORELIB_WC
+    CLKIN3                       c35_CORELIB_WC
+    CLKIN6                       c35_CORELIB_WC
+    Connect4_DW01_add_96
+        ADD32                    c35_CORELIB_WC
+        INV3                     c35_CORELIB_WC
+        NOR21                    c35_CORELIB_WC
+        XNR22                    c35_CORELIB_WC
+        XOR31                    c35_CORELIB_WC
+    Connect4_DW01_add_97
+        ADD32                    c35_CORELIB_WC
+        INV3                     c35_CORELIB_WC
+        NOR21                    c35_CORELIB_WC
+        XNR22                    c35_CORELIB_WC
+        XOR31                    c35_CORELIB_WC
+    DF1                          c35_CORELIB_WC
+    DF3                          c35_CORELIB_WC
+    DFC3                         c35_CORELIB_WC
+    DLPQ3                        c35_CORELIB_WC
+    IMUX20                       c35_CORELIB_WC
+    IMUX21                       c35_CORELIB_WC
+    IMUX23                       c35_CORELIB_WC
+    IMUX40                       c35_CORELIB_WC
+    INV0                         c35_CORELIB_WC
+    INV3                         c35_CORELIB_WC
+    INV6                         c35_CORELIB_WC
+    LOGIC0                       c35_CORELIB_WC
+    LOGIC1                       c35_CORELIB_WC
+    MUX22                        c35_CORELIB_WC
+    MUX41                        c35_CORELIB_WC
+    NAND20                       c35_CORELIB_WC
+    NAND22                       c35_CORELIB_WC
+    NAND31                       c35_CORELIB_WC
+    NAND33                       c35_CORELIB_WC
+    NAND41                       c35_CORELIB_WC
+    NAND42                       c35_CORELIB_WC
+    NOR20                        c35_CORELIB_WC
+    NOR21                        c35_CORELIB_WC
+    NOR22                        c35_CORELIB_WC
+    NOR31                        c35_CORELIB_WC
+    NOR32                        c35_CORELIB_WC
+    NOR40                        c35_CORELIB_WC
+    OAI210                       c35_CORELIB_WC
+    OAI212                       c35_CORELIB_WC
+    OAI222                       c35_CORELIB_WC
+    OAI311                       c35_CORELIB_WC
+    OAI2111                      c35_CORELIB_WC
+    XNR20                        c35_CORELIB_WC
+    XNR21                        c35_CORELIB_WC
+    XNR22                        c35_CORELIB_WC
+    XOR20                        c35_CORELIB_WC
+    XOR21                        c35_CORELIB_WC
+    XOR22                        c35_CORELIB_WC
+    XOR31                        c35_CORELIB_WC
+1
+ 
+****************************************
+Report : reference
+Design : Connect4
+Version: J-2014.09-SP2
+Date   : Fri Oct  9 01:57:14 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADD22              c35_CORELIB_WC
+                                145.600006      94  13686.400574  r
+ADD32              c35_CORELIB_WC
+                                273.000000      87  23751.000000  r
+AOI210             c35_CORELIB_WC
+                                 72.800003      18   1310.400055  
+AOI211             c35_CORELIB_WC
+                                 72.800003      35   2548.000107  
+AOI221             c35_CORELIB_WC
+                                 91.000000      95   8645.000000  
+AOI311             c35_CORELIB_WC
+                                 91.000000      25   2275.000000  
+AOI2111            c35_CORELIB_WC
+                                 91.000000      30   2730.000000  
+BUF2               c35_CORELIB_WC
+                                 54.599998     331  18072.599495  
+BUF6               c35_CORELIB_WC
+                                 72.800003       8    582.400024  
+CLKIN0             c35_CORELIB_WC
+                                 36.400002     101   3676.400154  
+CLKIN3             c35_CORELIB_WC
+                                 36.400002      50   1820.000076  
+CLKIN6             c35_CORELIB_WC
+                                 54.599998       7    382.199989  
+Connect4_DW01_add_96           8462.999992       1   8462.999992  h
+Connect4_DW01_add_97           8462.999992       1   8462.999992  h
+DF1                c35_CORELIB_WC
+                                273.000000       5   1365.000000  n
+DF3                c35_CORELIB_WC
+                                273.000000       5   1365.000000  n
+DFC3               c35_CORELIB_WC
+                                309.399994       2    618.799988  n
+DLPQ3              c35_CORELIB_WC
+                                182.000000     446  81172.000000  n
+IMUX20             c35_CORELIB_WC
+                                 91.000000       2    182.000000  
+IMUX21             c35_CORELIB_WC
+                                 91.000000     146  13286.000000  
+IMUX23             c35_CORELIB_WC
+                                145.600006       1    145.600006  
+IMUX40             c35_CORELIB_WC
+                                218.399994    2068  451651.187378 
+INV0               c35_CORELIB_WC
+                                 36.400002       1     36.400002  
+INV3               c35_CORELIB_WC
+                                 36.400002     650  23660.000992  
+INV6               c35_CORELIB_WC
+                                 54.599998       6    327.599991  
+LOGIC0             c35_CORELIB_WC
+                                 36.400002       1     36.400002  
+LOGIC1             c35_CORELIB_WC
+                                 36.400002       1     36.400002  
+MUX22              c35_CORELIB_WC
+                                109.199997       2    218.399994  
+MUX41              c35_CORELIB_WC
+                                236.600006      78  18454.800476  
+NAND20             c35_CORELIB_WC
+                                 54.599998      93   5077.799858  
+NAND22             c35_CORELIB_WC
+                                 54.599998     129   7043.399803  
+NAND31             c35_CORELIB_WC
+                                 72.800003      67   4877.600204  
+NAND33             c35_CORELIB_WC
+                                127.400002      16   2038.400024  
+NAND41             c35_CORELIB_WC
+                                 91.000000      76   6916.000000  
+NAND42             c35_CORELIB_WC
+                                145.600006      16   2329.600098  
+NOR20              c35_CORELIB_WC
+                                 54.599998      81   4422.599876  
+NOR21              c35_CORELIB_WC
+                                 54.599998     149   8135.399773  
+NOR22              c35_CORELIB_WC
+                                 72.800003       1     72.800003  
+NOR31              c35_CORELIB_WC
+                                 72.800003      76   5532.800232  
+NOR32              c35_CORELIB_WC
+                                 91.000000       4    364.000000  
+NOR40              c35_CORELIB_WC
+                                 72.800003     198  14414.400604  
+OAI210             c35_CORELIB_WC
+                                 72.800003      27   1965.600082  
+OAI212             c35_CORELIB_WC
+                                 72.800003     200  14560.000610  
+OAI222             c35_CORELIB_WC
+                                 91.000000      92   8372.000000  
+OAI311             c35_CORELIB_WC
+                                 91.000000      11   1001.000000  
+OAI2111            c35_CORELIB_WC
+                                 91.000000      26   2366.000000  
+XNR20              c35_CORELIB_WC
+                                109.199997      92  10046.399719  
+XNR21              c35_CORELIB_WC
+                                109.199997      83   9063.599747  
+XNR22              c35_CORELIB_WC
+                                200.199997       4    800.799988  
+XOR20              c35_CORELIB_WC
+                                127.400002      68   8663.200104  
+XOR21              c35_CORELIB_WC
+                                127.400002     116  14778.400177  
+XOR22              c35_CORELIB_WC
+                                200.199997      23   4604.599930  
+XOR31              c35_CORELIB_WC
+                                200.199997      46   9209.199860  
+-----------------------------------------------------------------------------
+Total 53 references                                 835616.589981
+1

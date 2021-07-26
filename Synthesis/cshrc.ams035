@@ -1,0 +1,48 @@
+setenv CDSHOME /net/cicsserver/usr1/cadence/IC615
+setenv CDSDIR $CDSHOME
+setenv CDS_MMSIM_DIR /net/cicsserver/usr1/cadence/MMSIM101
+set mmsimPath = ( $CDS_MMSIM_DIR/tools/bin )
+set cdspath = ( $CDSDIR/tools/dfII/bin $CDSDIR/tools/bin )
+setenv LM_LICENSE_FILE 5280@wildar:27500@numnum
+setenv ASSURAHOME /net/cicsserver/usr1/cadence/ASSURA614
+set assurapath = ( $ASSURAHOME/tools/assura/bin $ASSURAHOME/tools/bin $ASSURAHOME/tools/dfII/bin )
+if ( $?LD_LIBRARY_PATH == 0 ) then
+    setenv LD_LIBRARY_PATH $ASSURAHOME/tools/lib
+    else
+    setenv LD_LIBRARY_PATH $ASSURAHOME/tools/lib:${LD_LIBRARY_PATH}
+endif
+setenv IUSDIR /net/cicsserver/usr1/cadence/RC101
+set iuspath = ( $IUSDIR/tools/bin $IUSDIR/tools/verilog/bin )
+#if ( $?LD_LIBRARY_PATH == 0 ) then
+#    setenv LD_LIBRARY_PATH ${LDVDIR}/tools/lib
+#    else
+#    setenv LD_LIBRARY_PATH ${LDVDIR}/tools/lib:${LD_LIBRARY_PATH}
+#endif
+setenv ENCOUNTER /net/cicsserver/usr1/cadence/EDI101
+#setenv ENCOUNTER /net/cicsserver/usr1/cadence/SOC81
+set encounterpath = ( $ENCOUNTER/bin $ENCOUNTER/tools/bin )
+setenv QRC_HOME /net/cicsserver/usr1/cadence/EXT91
+set qrcpath = ( $QRC_HOME/tools/bin $QRC_HOME/tools/dfII/bin $QRC_HOME/tools/extraction/bin )
+#setenv ICC /net/cicsserver/usr1/cadence/ICC11241/tools/iccraft
+#set iccpath = ($ICC/bin)
+set localpath = (.)
+set path = ( $path $localpath $mmsimPath $cdspath $assurapath $iuspath $encounterpath $qrcpath )
+
+setenv MGLS_LICENSE_FILE 1717@cicsws24
+#setenv MGC_HOME /net/vlsiserver2/usr2/mentor/ixl_cal_2012.2_17.11
+setenv MGC_HOME /net/vlsiserver2/usr2/mentor/x86_cal_2012.2_17.11
+set path=($MGC_HOME/bin $path)
+
+setenv AMS_DIR /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS
+set path = ($AMS_DIR/cds/bin $AMS_DIR/programs/bin $path)
+setenv CDSDIR /net/cicsserver/usr1/cadence/IC615
+setenv DRCTEMPDIR /tmp
+#setenv LM_LICENSE_FILE 26745@cicsws48
+#set path = ( $AMS_DIR/Flexlm/v9.5/Solaris_7_8_9 $path)
+#setenv AMS_LM_CHECKOUT_ATTEMPTS 20
+#setenv AMS_LM_CHECKOUT_WAITTIME 5
+setenv CDS_Netlisting_Mode Analog
+setenv SPECTRE_DEFAULTS " -D "
+alias amsc3_icfb 'ams_cds -tech c35b4 -mode fb &'
+alias amss3_icfb 'ams_cds -tech s35b4 -mode fb &'
+alias amsh3_icfb 'ams_cds -tech h35b4 -mode fb &'

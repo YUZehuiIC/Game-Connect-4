@@ -1,0 +1,68 @@
+# The script is designed for teaching purpose
+# --------------------------------------------------------------------
+# Version | Programmer                 | Date       | Remark
+# --------------------------------------------------------------------
+# V1      | Dr Kwen-Siong Chong        | 31/07/2013 | Initial version
+# --------------------------------------------------------------------
+# --------------------------------------------------------------------
+# | Main Function |
+# -----------------------------------------------------------------
+# Default Constraint File For AMS 0.35um CMOS process
+ 
+
+#### ----------------------------------------------------
+#### | Define clock or virtual clock for the modules
+#### ----------------------------------------------------
+
+#### Define clock variables
+set CLK_PERIOD 100
+set FIX_DELAY 10
+set CLK_SKEW [expr ($CLK_PERIOD * 0.025)] 
+set INPUT_DELAY [expr ($CLK_PERIOD * 0.05)]
+set OUTPUT_DELAY [expr ($CLK_PERIOD * 0.05)]
+
+## Create real clock if clock port is found 
+if {[sizeof_collection [get_ports CLK]] > 0} {
+   set CLK_PORT CLK   
+   create_clock -period $CLK_PERIOD CLK 
+}
+
+## Create virtual clock if clock port is not found 
+if {[sizeof_collection [get_ports CLK]] == 0} {
+   set CLK_PORT VCLK
+   create_clock -period $CLK_PERIOD VCLK
+}
+
+## Apply default timing constraints for modules 
+set_input_delay $INPUT_DELAY -max -clock $CLK_PORT [remove_from_collection [all_inputs] $CLK_PORT]
+set_output_delay $OUTPUT_DELAY -max -clock $CLK_PORT [all_outputs]
+set_clock_uncertainty -setup $CLK_SKEW $CLK_PORT
+set_clock_uncertainty -hold $CLK_SKEW $CLK_PORT
+
+#### ---------------------------------------------------------
+#### | Define Design Environment
+#### ---------------------------------------------------------
+
+## Define variables
+set DRIVE_CELL INV4
+set DRIVE_PIN {Q}
+set OUTPUT_LOAD [load_of c35_CORELIB_WC/INV4/A]
+set MAX_OUTPUT_LOAD [expr ($OUTPUT_LOAD * 4)] 
+set WIRELOAD_MODEL 10k
+ 
+set_load $MAX_OUTPUT_LOAD [all_outputs]
+set_drive 1.5 [all_inputs]  
+
+## If real clock, set infinite drive strength
+if {[sizeof_collection [get_ports CLK]] > 0} {
+   set_drive 0 CLK      
+}
+
+set_wire_load_model -name $WIRELOAD_MODEL 
+set_driving_cell -lib_cell $DRIVE_CELL -pin $DRIVE_PIN [all_inputs]
+ 
+#### --------------------------------------------------------------
+#### | Define operationg conditions
+#### --------------------------------------------------------------
+## Define variables for AMS C35B4 process 
+## set_operating_conditions -max WORST-MIL

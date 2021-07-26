@@ -1,0 +1,292 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-SP1; Runtime version I-2014.03-SP1;  Oct  9 00:48 2020
+VCD+ Writer I-2014.03-SP1 Copyright (c) 1991-2014 by Synopsys Inc.
+The file '/home1/msc30y20/Desktop/Test2_GP30/rtl/inter.vpd' was opened successfully.
+
+Warning-[VPD-WARN-VCD-OFF] Warning from $vcdplusoff.
+At time 2540000, in PLI routine called from ./Connect4_tb.v, 53
+  Stopping the recording of signal value changes for specified scopes or 
+  specified signals may cause unpredictable values on other dumped signals. 
+  Turn off dumping on the whole design to guarantee that the values changes 
+  being dumped are correct.
+
+$finish called from file "./Connect4_tb.v", line 54.
+$finish at simulation time              2540000
+Simulation complete, time is 2540000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2540000 ps
+CPU Time:      0.570 seconds;       Data structure size:   1.1Mb
+Fri Oct  9 00:49:03 2020
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 5.11 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+          Version I-2014.03-SP1 -- Fri Oct  9 00:56:40 2020
+               Copyright (c) 1991-2014 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file './Connect4_tb.v'
+Parsing design file './Syn_Connect4.v'
+Parsing library file '../VerilogLibrary/c35_CORELIB.v'
+Parsing library file '../VerilogLibrary/c35_IOLIB.v'
+Parsing library file '../VerilogLibrary/FILLANT.v'
+Parsing library file '../VerilogLibrary/udp.v'
+Top Level Modules:
+       Connect4_tb
+TimeScale is 1 ns / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 1236
+"DF3 \G_play_reg[3] ( .D (G[3]),  .C (CLK),  .QN (n1680));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 1245
+"DFC3 \state_reg[1] ( .D (next_state[1]),  .C (CLK),  .RN (NRST),  .Q (state[1]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2098
+"Connect4_DW01_add_97 add_0_root_sub_0_root_sub_136_2( .A ({n65541, n65540, n65540, n65540, n65540, n65541, n65541, n65541, n65541, n65540, n65540, n65540, n65540, n65541, n65541, n65541, n65541, n65540, n65540, n65540, n65540, n65541, n65541, N1380, N1379, N1378, N1377, N1376, n65741, n807, n807, n807}),  .B ({N1331, N1330, N1329, N1328, N1327, N1326, N1325, N1324, N1323, N1322, N1321, N1320, N1319, N1318, N1317, N1316, N1315, N1314, N1313, N1312, N1311, N1310, N1309, N1308, N1307, N1306, N1305, N1304, N1303, N1302, N1301, n65546}),  .CI (n65544),  .SUM ({N1435, N1434, N1433, N1432, N1431, N1430, N1429, N1428, N1427, N1426, N1425, N1424, N1423, N1422, N1421, N1420, N1419, N1418, N1417, N1416, N1415, N1414, N1413, N1412, N1411, N1410, N1409, N1408, N1407 ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2110
+"Connect4_DW01_add_96 add_0_root_sub_0_root_sub_167_2( .A ({n65543, N1946, n65543, N1946, n65543, n65543, n65543, n65543, n65543, N1946, n65543, N1946, n65543, n65543, n65543, n65543, n65543, n65543, n65543, n65543, n65543, n65543, n65543, N1923, N1922, N1921, N1920, N1919, n65740, n807, n807, n807}),  .B ({N1874, N1873, N1872, N1871, N1870, N1869, N1868, N1867, N1866, N1865, N1864, N1863, N1862, N1861, N1860, N1859, N1858, N1857, N1856, N1855, N1854, N1853, N1852, N1851, N1850, N1849, N1848, N1847, N1846, N1845, N1844, n65545}),  .CI (n65544),  .SUM ({N1978, N1977, N1976, N1975, N1974, N1973, N1972, N1971, N1970, N1969, N1968, N1967, N1966, N1965, N1964, N1963, N1962, N1961, N1960, N1959, N1958, N1957, N1956, N1955, N1954, N1953, N1952, N1951, N1950, N1 ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2311
+"ADD32 \r30599/U1_5 ( .A (N4594),  .B (N11464),  .CI (\r30599/carry [5]),  .S (N1206));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2323
+"ADD32 \r31798/U1_5 ( .A (N3205),  .B (N3211),  .CI (\r31798/carry [5]),  .S (N1020));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2326
+"ADD32 \r32400/U1_5 ( .A (N3378),  .B (N3384),  .CI (\r32400/carry [5]),  .S (N1044));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2337
+"ADD32 \r33599/U1_5 ( .A (N4731),  .B (N11494),  .CI (\r33599/carry [5]),  .S (N1224));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2341
+"ADD32 \r34787/U1_5 ( .A (N4719),  .B (N11488),  .CI (\r34787/carry [5]),  .S (N1218));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2345
+"ADD32 \r35376/U1_5 ( .A (N4445),  .B (n[5]),  .CI (\r35376/carry[5] ),  .S (N1182));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2349
+"ADD32 \r35965/U1_5 ( .A (N4191),  .B (n[5]),  .CI (\r35965/carry[5] ),  .S (N1158));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2353
+"ADD32 \r36567/U1_5 ( .A (N3223),  .B (N3229),  .CI (\r36567/carry [5]),  .S (N1026));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2356
+"ADD32 \r37169/U1_5 ( .A (N3050),  .B (N3056),  .CI (\r37169/carry [5]),  .S (N1002));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2359
+"ADD32 \r37771/U1_5 ( .A (N3396),  .B (N3402),  .CI (\r37771/carry [5]),  .S (N1050));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2362
+"ADD32 \r38360/U1_5 ( .A (N4318),  .B (n65600),  .CI (\r38360/carry [5]),  .S (N1170));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2366
+"ADD32 \r38962/U1_5 ( .A (N4582),  .B (N11458),  .CI (\r38962/carry [5]),  .S (N1200));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2370
+"ADD32 \r39564/U1_5 ( .A (N4858),  .B (N11512),  .CI (\r39564/carry [5]),  .S (N1236));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2374
+"ADD32 \r40166/U1_5 ( .A (N4469),  .B (N11434),  .CI (\r40166/carry [5]),  .S (N1194));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2378
+"ADD32 \r40768/U1_5 ( .A (N3360),  .B (N3366),  .CI (\r40768/carry [5]),  .S (N1038));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 2381
+"ADD32 \r41370/U1_5 ( .A (N4606),  .B (N11470),  .CI (\r41370/carry [5]),  .S (N1212));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 7011
+"DF1 \O_play_reg[3] ( .D (O[3]),  .C (CLK),  .Q (O_play[3]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 7012
+"DF1 \O_play_reg[2] ( .D (O[2]),  .C (CLK),  .Q (O_play[2]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 7013
+"DF1 \O_play_reg[1] ( .D (O[1]),  .C (CLK),  .Q (O_play[1]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 7014
+"DF1 \G_play_reg[2] ( .D (G[2]),  .C (CLK),  .Q (G_play[2]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+./Syn_Connect4.v, 7015
+"DF1 \G_play_reg[1] ( .D (G[1]),  .C (CLK),  .Q (G_play[1]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+   ***   $sdf_annotate() version 1.2R
+
+Warning-[SDFCOM_CNOF] Cannot Open File
+  SDF Error: Cannot open SDF file Syn_MatrixMultiplier.sdf for reading.      
+  No such file or directory.
+
+
+          Total errors: 1
+          Total warnings: 0
+   ***    SDF annotation aborted: Fri Oct  9 00:56:40 2020
+
+
+Starting vcs inline pass...
+55 modules and 9 UDPs read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module Connect4_tb because:
+	Module parameters have been changed via defparam.
+rm -f _csrc*.so linux_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -m elf_i386 -shared -o .//../simv.daidir//_csrc1.so --whole-archive _vcsobj_1_1.a  --no-whole-archive
+ld -m elf_i386 -shared -o .//../simv.daidir//_csrc0.so 5NrI_d.o 5NrIB_d.o SIM_l.o  
+ld -m elf_i386 -shared -o .//../simv.daidir//pre_vcsobj_0_1.so --whole-archive pre_vcsobj_0_1.a --no-whole-archive
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv  -m32 -m32   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  _csrc1.so _csrc0.so   pre_vcsobj_0_1.so  rmapats_mop.o rmapats.o rmar.o           /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libzerosoft_rt_stubs.so /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libvirsim.so /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/librterrorinf.so /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libsnpsmalloc.so    /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libvcsnew.so /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libuclinative.so   -Wl,-whole-archive /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/libvcsucli.so -Wl,-no-whole-archive          /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/vcs_save_restore_new.o /net/numnum2/silo3/synopsys/vJ-2014/vcs/I-2014.03-SP1/linux/lib/ctype-stubs_32.a -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .836 seconds to compile + .191 seconds to elab + .485 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-SP1; Runtime version I-2014.03-SP1;  Oct  9 00:56 2020
+VCD+ Writer I-2014.03-SP1 Copyright (c) 1991-2014 by Synopsys Inc.
+The file '/home1/msc30y20/Desktop/Test2_GP30/rtl/inter.vpd' was opened successfully.
+
+Warning-[VPD-WARN-VCD-OFF] Warning from $vcdplusoff.
+At time 10190000, in PLI routine called from ./Connect4_tb.v, 53
+  Stopping the recording of signal value changes for specified scopes or 
+  specified signals may cause unpredictable values on other dumped signals. 
+  Turn off dumping on the whole design to guarantee that the values changes 
+  being dumped are correct.
+
+$finish called from file "./Connect4_tb.v", line 54.
+$finish at simulation time             10190000
+Simulation complete, time is 10190000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10190000 ps
+CPU Time:      0.400 seconds;       Data structure size:   1.1Mb
+Fri Oct  9 00:56:48 2020

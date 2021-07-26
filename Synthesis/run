@@ -1,0 +1,7 @@
+mkdir logs
+mkdir sources
+mkdir netlist
+mkdir ddc
+cp -i ../Behavioral/Connect4.v sources/
+source sourcefiles
+design_vision &

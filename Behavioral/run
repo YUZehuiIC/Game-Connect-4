@@ -1,0 +1,3 @@
+source synopsys_linux_vJ-2014_cshrc
+vcs -debug +v2k ./Connect4_tb.v ./Connect4.v
+simv -gui
